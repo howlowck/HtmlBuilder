@@ -30,6 +30,8 @@ class Element {
         if (is_array($attribute)) {
             $this->attributes = array_merge($this->attributes, $attribute);
             return $this;
+        } elseif (is_empty($attribute)) {
+            return $this;
         }
         array_push($this->attributes, $attribute);
         return $this;

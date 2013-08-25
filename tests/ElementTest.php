@@ -27,6 +27,12 @@ class ElementTest extends PHPUnit_Framework_TestCase {
         $el->addAttribute(array('required'));
         $this->assertEquals(array('id' => 'bar', 'required'), $el->getAttributes());
     }
+    public function testAddAttributeEmptyStringToExisting() {
+        $el = new Element('input');
+        $el->addAttribute(array('id' => 'bar'));
+        $el->addAttribute('');
+        $this->assertEquals(array('id' => 'bar'), $el->getAttributes());
+    }
     public function testSetAttributesArray() {
         $el = new Element('div');
         $el->setAttributes(array('id' => 'wow'));
