@@ -1,0 +1,21 @@
+{
+    "name": "howlowck/html-builder",
+    "description": "",
+    "authors": [
+        {
+            "name": "Hao Luo",
+            "email": "howlowck@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x",
+        "howlowck/support" : "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Howlowck\\HtmlBuilder": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
