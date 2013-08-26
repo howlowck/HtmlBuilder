@@ -12,8 +12,8 @@ You can add a string.
 
 Or another element
 ```
-$first_name = new Element('input');
-$form->addContent($input);
+$firstName = new Element('input');
+$form->addContent($firstName);
 ```
 
 ## Add/Set Attributes
