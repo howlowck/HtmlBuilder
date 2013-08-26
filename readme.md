@@ -1,4 +1,4 @@
-# HTML Builder
+# HTML Builder [![Build Status](https://travis-ci.org/howlowck/HtmlBuilder.png?branch=master)](https://travis-ci.org/howlowck/HtmlBuilder)
 ## Include the Builder
 ``` use Howlowck\HtmlBuilder\Element; ```
 
