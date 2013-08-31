@@ -73,7 +73,6 @@ class ElementTest extends PHPUnit_Framework_TestCase {
     }
     public function testHasContentAfterAddContent() {
        $el = new Element('ul');
-       $li = new Element('li');
        $el->addContent('hi');
        $this->assertEquals(true, $el->hasContent());
     }
