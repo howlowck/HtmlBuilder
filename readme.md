@@ -1,4 +1,4 @@
-# HTML Builder
+# HTML Builder [![Build Status](https://travis-ci.org/howlowck/HtmlBuilder.png?branch=master)](https://travis-ci.org/howlowck/HtmlBuilder)
 ## Include the Builder
 ``` use Howlowck\HtmlBuilder\Element; ```
 
@@ -12,8 +12,8 @@ You can add a string.
 
 Or another element
 ```
-$first_name = new Element('input');
-$form->addContent($input);
+$firstName = new Element('input');
+$form->addContent($firstName);
 ```
 
 ## Add/Set Attributes

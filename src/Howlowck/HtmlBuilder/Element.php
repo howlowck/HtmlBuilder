@@ -38,7 +38,7 @@ class Element {
     }
     public function setContent($content) {
         $this->content = $content;
-        $this->checkContent($content);
+        $this->checkContent($this->content);
         return $this;
     }
     public function addContent($content) {
@@ -46,14 +46,14 @@ class Element {
             $this->content = array($this->content);
         }
         array_push($this->content, $content);
-        $this->checkContent($content);
+        $this->checkContent($this->content);
         return $this;
     }
     public function getHtml() {
         return $this->builder->getHtml();
     }
     protected function checkContent($content) {
-        if (empty($content)) {
+        if (is_empty($content)) {
             $this->hasContent = false;
             return;
         }
